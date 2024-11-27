@@ -73,21 +73,18 @@ header {
   }
 
   .logo img {
-    width: 80px;
-    display: none;
+    width: 20px;
+    /* display: none; */
   }
 
-  .navigation ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    gap: 6vw;
-  }
+
 }
 
 @media (max-width: 480px) {
+  .logo img {
+    /* width: 20px; */
+    display: none;
+  }
   .navigation ul li {
     margin: 0 10px;
     font-size: 14px;
@@ -107,5 +104,14 @@ header {
   .open {
     display: flex;
     flex-direction: row;
+  }
+  .navigation ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 6vw;
   }
 }
