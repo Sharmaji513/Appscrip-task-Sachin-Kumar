@@ -1,0 +1,212 @@
+/* General Footer Styling */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 2rem 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Grid Layout for Footer Sections */
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Logo Section */
+
+  
+  .logo1 {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .logo h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  /* Links Styling */
+  .footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Subscribe Section */
+  .input-section .subscribe {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .subscribe-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .subscribe-button {
+    background-color: #38a169; 
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #2f855a; 
+  }
+  
+  /* Social Media Section */
+  .social-buttons {
+    display: flex;
+    gap: 2rem;
+    margin: 1vw;
+  }
+  
+  .social-button {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .social-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+  
+  /* Lower Section */
+  .lower {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .lower p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .follow h4 {
+    margin: 0;
+  }
+  
+  /* Payment Section */
+  .payment-section {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #121212; 
+  }
+  
+  .payment-section h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .card-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .card-icon {
+    font-size: 2rem;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .card-icon:hover {
+    transform: scale(1.2);
+    color: #38a169;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 800px) {
+    .footer-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .follow {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  
+    .lower {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .footer-section h4 {
+      font-size: 1rem;
+    }
+  
+    .footer-section a {
+      font-size: 0.875rem;
+    }
+  
+    .subscribe-button {
+      padding: 0.25rem 0.5rem;
+    }
+  
+    .lower {
+      gap: 1rem;
+    }
+  }
+  
